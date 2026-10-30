@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Kolipaka Venkata Sai - BTech CSE student and Data Science enthusiast.">
+<title>Kolipaka Venkata Sai | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="glow" id="glow"></div>
+<canvas id="bg"></canvas>
+
+<header>
+<nav class="navbar">
+  <a href="#home" class="logo">KVS<span></span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li><li><a href="#certifications">Certificates</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button>
+</nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <p class="hello">Hello, I'm</p>
+      <h1 id="heroName"></h1>
+      <p class="typing">I'm a <span id="typed"></span><span class="caret"></span></p>
+      <p class="intro" id="heroIntro"></p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn magnetic">View My Work</a>
+        <a href="#contact" class="btn secondary-btn magnetic">Get In Touch</a>
+      </div>
+      <div class="social-icons" id="socials"></div>
+    </div>
+    <div class="hero-image"><img id="heroPhoto" alt="Profile photo"></div>
+  </div>
+  <a href="#about" class="scroll-down" aria-label="Scroll"><i class="fas fa-chevron-down"></i></a>
+</section>
+
+<section id="about" class="section">
+  <h2>About <span class="grad">Me</span></h2>
+  <p class="section-subtitle" id="aboutText"></p>
+  <div class="stats" id="stats"></div>
+  <div class="grid" id="aboutCards"></div>
+</section>
+
+<section id="skills" class="section">
+  <h2>Technical <span class="grad">Skills</span></h2>
+  <p class="section-subtitle">A toolkit for building innovative solutions</p>
+  <div class="grid" id="skillsGrid"></div>
+</section>
+
+<section id="experience" class="section">
+  <h2>Experience &amp; <span class="grad">Achievements</span></h2>
+  <p class="section-subtitle">Practical experience and competitive achievements</p>
+  <div class="timeline" id="expList"></div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Featured <span class="grad">Projects</span></h2>
+  <p class="section-subtitle">Innovative solutions in AI/ML and application development</p>
+  <div class="grid" id="projGrid"></div>
+</section>
+
+<section id="education" class="section">
+  <h2>Educational <span class="grad">Journey</span></h2>
+  <p class="section-subtitle">Academic background and qualifications</p>
+  <div class="timeline" id="eduList"></div>
+</section>
+
+<section id="certifications" class="section">
+  <h2>Validations &amp; <span class="grad">Certifications</span></h2>
+  <p class="section-subtitle">A commitment to continuous learning</p>
+  <div class="grid" id="certGrid"></div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Get In <span class="grad">Touch</span></h2>
+  <p class="section-subtitle">Reach out for collaborations, opportunities, or a friendly chat</p>
+  <div class="contact-grid">
+    <div class="card reveal"><h3>Contact Information</h3><div id="contactList"></div></div>
+    <div class="card reveal">
+      <h3>Connect With Me</h3>
+      <div class="connect" id="connectBtns"></div>
+      <p class="open" id="openText"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><p id="footerText"></p></footer>
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="js/data.js"></script>
+
+<!-- Builds the page from the data above. You don't need to edit this. -->
+<script src="js/main.js"></script>
+
+<!-- Animations and effects. You don't need to edit this. -->
+<script src="js/effects.js"></script>
+</body>
+</html>
